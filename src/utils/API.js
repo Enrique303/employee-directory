@@ -1,10 +1,7 @@
 import axios from "axios";
-const URL = "https://randomapi.com/api/1234abcd?key=";
 
-const API = {
-  getUsers: function () {
-    return axios.get(URL);
-  },
+export default{ 
+  randomUsers:function(){    
+    return axios.get("https://randomuser.me/api/?results=25&nat=us");
+  }
 };
-
-export default API;

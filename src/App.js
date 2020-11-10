@@ -1,8 +1,15 @@
-import React from "react";
-import Main from "./components/Main"
+import React from 'react';
+import DataArea from './components/DataArea';
+import Header from './components/Header';
 
 
-function App() {
-  return <Main />
+function App () {
+  return(
+    <div>
+      <Header />
+      <DataArea />
+    </div>
+  )
 }
+
 export default App;
